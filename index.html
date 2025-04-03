@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & tables</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+        <div>
+            <label for="correo">Email</label>
+            <input type="email" id="correo" name="tu correo" placeholder="Tu correo" required>
+        </div>
+        <div>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" id="date" name="tu fecha de nacimiento" placeholder="Fecha" required>
+        </div>
+        <div>
+            <label for="role">Rol</label>
+            <select id="role" name="rol" required>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+        <div>
+            <input type="radio" name="sexo" value="masculino"/> Masculino
+            <input type="radio" name="sexo" value="femenino"/> Femenino
+
+        </div>
+        <div>
+            <input type="checkbox" name="skills" value="Html"/> Html
+            <input type="checkbox" name="skills" value="Css"/> Css
+            <input type="checkbox" name="skills" value="Javascript"/> Javascript
+
+        </div>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="2" cols="50" placeholder="Comentarios"></textarea>
+        </div>
+        <div>
+            <label for="foto">Comentarios</label>
+           <input type="file" id="foto" accept="image/*">
+        </div>
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>
