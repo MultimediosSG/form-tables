@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    display: grid;
+    background-color: #ccc;
+    /* display: grid;
     place-content: center;
-    height: 100vh;
+    height: 100vh; */
 }
 
 .cuadro{
@@ -69,5 +70,34 @@ body{
   form textarea{
     width: 100%;
     height: 100px;
+  }
+
+  form{
+    display: grid;
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+  }
+
+  table{
+    width: 100%;
+    border-collapse: collapse; 
+  }
+  tr{
+    border: 1px solid red;
+  }
+  td{
+    padding: 10px;
+    border: 1px solid red;
+    background-color: yellowgreen;
+  }
+  thead th{
+    background-color: lightblue;
+  }
+  tfoot td{
+    background-color: lightblue;
   }
 
